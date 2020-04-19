@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="HW13" verbose="1" >
+    <test name="Parameterized" >
+        <parameter name="name" value="Orsik"/>
+        <parameter name="password" value="Password"/>
+        <classes>
+            <class name="HW_13.LoginTest">
+                <methods>
+                    <include name="xml.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
